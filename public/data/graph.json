@@ -1,0 +1,19 @@
+{
+  "nodes": [
+    { "id": "stock", "name": "Stock Prep" },
+    { "id": "headbox", "name": "Headbox" },
+    { "id": "forming", "name": "Forming Section" },
+    { "id": "press", "name": "Press Section" },
+    { "id": "dryer", "name": "Dryer Section" },
+    { "id": "calendar", "name": "Calendar Section" },
+    { "id": "reel", "name": "Reel" }
+  ],
+  "links": [
+    { "source": "stock", "target": "headbox" },
+    { "source": "headbox", "target": "forming" },
+    { "source": "forming", "target": "press" },
+    { "source": "press", "target": "dryer" },
+    { "source": "dryer", "target": "calendar" },
+    { "source": "calendar", "target": "reel" }
+  ]
+}
