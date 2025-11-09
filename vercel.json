@@ -1,17 +1,8 @@
 {
-  "functions": {
-    "api/*.py": {
-      "runtime": "python3.9"
-    }
-  },
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
-      "src": "/",
-      "dest": "/public/index.html"
-    }
+  "rewrites": [
+    { "source": "/", "destination": "/public/index.html" },
+    { "source": "/modules", "destination": "/public/modules.html" },
+    { "source": "/graphs", "destination": "/public/graphs.html" },
+    { "source": "/videos", "destination": "/public/videos.html" }
   ]
 }
